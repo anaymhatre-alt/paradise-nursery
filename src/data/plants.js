@@ -23,4 +23,6 @@ export const categories = [
   { name: 'Easy-Care Greens', note: 'Lovely leaves, lighter routines.' },
   { name: 'Trailing & Small', note: 'Small spaces, big personality.' },
 ];
-export const imageUrl = (id, width = 720) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=85`;
+export const imageUrl = (idOrUrl, width = 720) => idOrUrl.startsWith('http')
+  ? idOrUrl
+  : `https://images.unsplash.com/${idOrUrl}?auto=format&fit=crop&w=${width}&q=85`;

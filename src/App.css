@@ -6,3 +6,4 @@
 .button-outline{border:1px solid #bdc4b6;color:#4b6247;background:transparent}
 .button-outline:hover{background:#e4e9df}
 .continue-shopping{width:100%;margin-top:10px;justify-content:space-between}
+@media(max-width:620px){.main-nav{display:flex;gap:11px}.main-nav a{font-size:9px}}
